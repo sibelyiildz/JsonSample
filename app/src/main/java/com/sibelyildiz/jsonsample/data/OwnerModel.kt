@@ -1,4 +1,4 @@
-package com.sibelyildiz.jsonsample.Network
+package com.sibelyildiz.jsonsample.data
 
 
 /**     Code with ❤
@@ -7,10 +7,14 @@ package com.sibelyildiz.jsonsample.Network
 ╠════════════════════════════╣
 ║ sibelyldz2012@gmail.com    ║
 ╠════════════════════════════╣
-║     12/08/2020 - 18:36     ║
+║     12/08/2020 - 18:50     ║
 ╚════════════════════════════╝
  */
 
-data class UserReposResponse(
-    val data: List<String>
+data class OwnerModel(
+    val login: String,
+    val id: Long,
+    val node_id: String,
+    val avatar_url: String,
+    val site_admin: Boolean
 )
