@@ -1,6 +1,6 @@
-package com.sibelyildiz.jsonsample.Network.Response
+package com.sibelyildiz.jsonsample.mock
 
-import com.sibelyildiz.jsonsample.data.RepoModel
+import com.sibelyildiz.jsonsample.data.LicenseModel
 
 
 /**     Code with ❤
@@ -9,10 +9,17 @@ import com.sibelyildiz.jsonsample.data.RepoModel
 ╠════════════════════════════╣
 ║ sibelyldz2012@gmail.com    ║
 ╠════════════════════════════╣
-║     12/08/2020 - 18:36     ║
+║     20/08/2020 - 21:32     ║
 ╚════════════════════════════╝
  */
 
-data class UserReposResponse(
-    val data: List<RepoModel>
-)
+object MockData {
+    fun getLicenseModel(): LicenseModel = LicenseModel(
+        "key dsşlfd",
+        "name aekfdsfdvş",
+        "spdkid dslfkd",
+        "url dkfdlkf",
+        "nodeoid fkjskf"
+
+    )
+}

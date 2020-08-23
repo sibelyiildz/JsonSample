@@ -1,4 +1,6 @@
-package com.sibelyildiz.jsonsample.data
+package com.sibelyildiz.jsonsample.network.Response
+
+import com.sibelyildiz.jsonsample.data.RepoModel
 
 
 /**     Code with ❤
@@ -7,15 +9,10 @@ package com.sibelyildiz.jsonsample.data
 ╠════════════════════════════╣
 ║ sibelyldz2012@gmail.com    ║
 ╠════════════════════════════╣
-║     12/08/2020 - 18:55     ║
+║     12/08/2020 - 18:36     ║
 ╚════════════════════════════╝
  */
 
-data class LicenseModel(
-    val key: String = "",
-    val name: String = "",
-    val spdx_id: String = "",
-    val url: String = "",
-    val node_id: String = ""
-
+data class UserReposResponse(
+    val data: List<RepoModel>
 )
